@@ -38,7 +38,7 @@
         include('phpqrcode/qrlib.php');
         
         if (isset($_POST['codeText'])) {
-            $PNG_WEB_DIR = 'temp/'; //กำหนด Path รูป Qr Code
+            $PNG_WEB_DIR = 'qr_temp/'; //กำหนด Path รูป Qr Code
             $filename = $_POST['filename'];
             $path = $PNG_WEB_DIR.$filename.'.png'; //ไฟล์
             $codeText = $_POST['codeText'];
