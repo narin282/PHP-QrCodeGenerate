@@ -38,7 +38,7 @@
         include('phpqrcode/qrlib.php');
         
         if (isset($_POST['codeText'])) {
-            $PNG_WEB_DIR = 'qr_temp/'; //กำหนด Path รูป Qr Code
+            $PNG_WEB_DIR = 'temp/'; //กำหนด Path รูป Qr Code
             $filename = $_POST['filename'];
             $path = $PNG_WEB_DIR.$filename.'.png'; //ไฟล์
             $codeText = $_POST['codeText'];
@@ -64,8 +64,7 @@
         </div>
 
         <div class="form-label-group">
-            <input type="text" name="codeText" class="form-control" placeholder="URL or Text" required autofocus>
-            <label for="codeText">www.example.com</label>
+            <input type="text" name="codeText" class="form-control" placeholder="www.example.com" required autofocus>
         </div>
         <input type="text" name="filename" value="<?=date("YmdHis")?>" hidden>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Generate QR Code </button>
