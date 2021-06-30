@@ -59,7 +59,7 @@
             ?>
         </div>
         <div class="text-center mb-4">
-            <h1 class="h3 mb-3 font-weight-normal">QR Code Generator</h1>
+            <h1 class="h3 mb-3 font-weight-normal">QR Code Generator by Narin</h1>
             <p>Place website [URL] or text for generate QR Code.</p>
         </div>
 
